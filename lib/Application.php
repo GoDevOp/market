@@ -32,10 +32,7 @@ class Application extends App {
 	 */
 	public function __construct(array $urlParams = array()) {
 		parent::__construct('firewall', $urlParams);
-
-//		$this->registerServices();
 	}
-
 
 	public function boot() {
 		if ($this->isAdmin()) {
